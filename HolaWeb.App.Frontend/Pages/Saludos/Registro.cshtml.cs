@@ -16,7 +16,7 @@ namespace HolaWeb.App.FrontEnd.Pages
         [BindProperty]
         public Propietario Propietario { get; set; }
 
-        public EditModel(IRepositorioPropietario repositorioPropietario)
+        public RegistroModel(IRepositorioPropietario repositorioPropietario)
         {
             this.repositorioPropietario = repositorioPropietario;
         }

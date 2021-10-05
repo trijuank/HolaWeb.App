@@ -14442,6 +14442,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\HolaWeb\\HolaWeb.App\\HolaWeb.App.Frontend\\Pages\\Saludos\\Registro.cshtml",
+      "TargetPath": "Pages\\Saludos\\Registro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\HolaWeb\\HolaWeb.App\\HolaWeb.App.Frontend\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
