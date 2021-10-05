@@ -1,0 +1,26 @@
+﻿@page
+@model HolaWeb.App.Frontend.Pages.EditModel
+@{
+}
+<h2>Edición del Propietario :@Model.Propietario.Nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="Propietario.Id"/>
+    <div class="form-group">
+        <label asp-for="Propietario.Nombre"></label>
+        <input asp-for="Propietario.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="Propietario.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Propietario.Apellido"></label>
+        <input asp-for="Propietario.Apellido" class="form-control">
+        <span class="text-danger" asp-validation-for="Propietario.Apellido"></span>
+    </div>
+    <div class="form-group">
+        
+        <input asp-for="Propietario.Edad" class="form-control">
+        <input type="text" class="form-control" id="validationCustom01" value=@Model.Propietario.Edad required>
+        
+    </div>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form>
+<a asp-page="./List" class="btn-default">Lista de Saludos </a>

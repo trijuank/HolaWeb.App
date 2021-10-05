@@ -1,0 +1,90 @@
+﻿@page
+@model HolaWeb.App.FrontEnd.Pages.RegistroModel
+@{
+}
+
+<h1>Registro de propietarios</h1>
+<form class="needs-validation" novalidate method="post">
+  <input type="hidden" asp-for="Propietario.Id"/>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label asp-for="validationCustom01">Nombres</label>
+      <input type="text" class="form-control" id="validationCustom01" value="" required>
+      <div class="valid-feedback">
+        Luce bien!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Apellidos</label>
+      <input type="text" class="form-control" id="validationCustom02" value="" required>
+      <div class="valid-feedback">
+        Luce bien!
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Telefono</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Edad</label>
+      <input type="text" class="form-control" id="validationCustom04" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Direccion</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Genero</label>
+      <select class="custom-select" id="validationCustom06" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Email</label>
+      <input type="text" class="form-control" id="validationCustom07" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-10 mb-6">
+    <label for="validationTextarea">Consideraciones</label>
+    <textarea class="form-control is-invalid" id="validationCustom08" placeholder="Required example textarea" required></textarea>
+    <div class="invalid-feedback">
+      Please enter a message in the textarea.
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Registrar</button>
+</form>
